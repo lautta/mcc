@@ -2,7 +2,7 @@
 
 
 # Algorithm 3: Dynamic Programming
-def dp(coins, value):
+def changedp(coins, value):
 	results = []
 	for i in range(len(coins)):
 		results.append(0)
