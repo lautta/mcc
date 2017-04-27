@@ -23,6 +23,10 @@ def get_runtimes():
 	V2 = [1, 5, 10, 25, 50]
 	V3 = [1, 6, 13, 37, 150]
 	
+	write_times('alg1_V1_1-50.csv', runtime(changeslow, V1, 1, 50))
+	write_times('alg1_V2_1-50.csv', runtime(changeslow, V2, 1, 50))
+	write_times('alg1_V3_1-50.csv', runtime(changeslow, V3, 1, 50))
+	
 	write_times('alg3_V1_1-50.csv', runtime(changedp, V1, 1, 50))
 	write_times('alg3_V2_1-50.csv', runtime(changedp, V2, 1, 50))
 	write_times('alg3_V3_1-50.csv', runtime(changedp, V3, 1, 50))
