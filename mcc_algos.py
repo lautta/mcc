@@ -56,4 +56,4 @@ def changedp(coins, value):
 		results[coinTracker[curIndex]] += 1
 		curIndex -= coins[coinTracker[curIndex]]
 	
-	return results
+	return results, sum(results)
