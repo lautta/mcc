@@ -35,20 +35,29 @@ def get_data():
 	V3 = [1, 6, 13, 37, 150]
 
 	# Minimum coins for each A
-	write_data('alg1_V1_1-50.csv', minimum(changeslow, V1, 1, 35))
-	write_data('alg1_V2_1-50.csv', minimum(changeslow, V2, 1, 35))
-	write_data('alg1_V3_1-50.csv', minimum(changeslow, V3, 1, 35))
-
+	write_data('alg1_V1_1-35.csv', minimum(changeslow, V1, 1, 35))
+	write_data('alg1_V2_1-35.csv', minimum(changeslow, V2, 1, 35))
+	write_data('alg1_V3_1-35.csv', minimum(changeslow, V3, 1, 35))
+	
+	write_data('alg2_V1_1-50.csv', minimum(changegreedy, V1, 1, 50))
+	write_data('alg2_V2_1-50.csv', minimum(changegreedy, V2, 1, 50))
+	write_data('alg2_V3_1-50.csv', minimum(changegreedy, V3, 1, 50))
+	
+	write_data('alg2_V1_2000-2200.csv', minimum(changedp, V1, 2000, 2200))
+	write_data('alg2_V2_2000-2200.csv', minimum(changedp, V2, 2000, 2200))
+	write_data('alg2_V3_2000-2200.csv', minimum(changedp, V3, 2000, 2200))
+	
 	write_data('alg3_V1_1-50.csv', minimum(changedp, V1, 1, 50))
 	write_data('alg3_V2_1-50.csv', minimum(changedp, V2, 1, 50))
 	write_data('alg3_V3_1-50.csv', minimum(changedp, V3, 1, 50))
-
+	
 	write_data('alg3_V1_2000-2200.csv', minimum(changedp, V1, 2000, 2200))
 	write_data('alg3_V2_2000-2200.csv', minimum(changedp, V2, 2000, 2200))
 	write_data('alg3_V3_2000-2200.csv', minimum(changedp, V3, 2000, 2200))
 
 	# Runtimes for each
 	write_data('alg1_V2_runtimes.csv', runtime(changeslow, V2, 1, 35, 1))
+	write_data('alg2_V2_runtimes.csv', runtime(changegreedy, V2, 1, 50, 5))
 	write_data('alg3_V2_runtimes.csv', runtime(changedp, V2, 1, 50, 5))
 
 	print('Wrote csv files...')

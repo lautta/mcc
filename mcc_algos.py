@@ -23,7 +23,19 @@ def changeslow(values, amount):
 			min_change = sub_change[:]
 
 	return min_change, min_count
-
+	
+	
+# Algorithm 2: Greedy
+def changegreedy(values, amount):
+	
+	results = []
+	
+	for val in values[::-1]:
+		results.insert(0, amount // val)
+		amount %= val
+	
+	return results, sum(results)
+	
 
 # Algorithm 3: Dynamic Programming
 def changedp(coins, value):
