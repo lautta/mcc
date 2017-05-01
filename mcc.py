@@ -24,12 +24,9 @@ def write_results(filename, algo_func, algo_name, values, amounts, write_option)
 		output.write('Algorithm %s:\n' % algo_name)
 		for value, amount in zip(values, amounts):
 			output.write(' '.join([str(i) for i in value]))
-			if algo_func == changeslow and amount - sum(value) > 70:
-				output.write('\nERROR\nERROR\n')
-			else:
-				(change_result, count_result) = algo_func(value, amount)
-				change_result = ' '.join([str(i) for i in change_result])
-				output.write('\n%s\n%s\n' % (change_result, count_result))
+			(change_result, count_result) = algo_func(value, amount)
+			change_result = ' '.join([str(i) for i in change_result])
+			output.write('\n%s\n%s\n' % (change_result, count_result))
 		output.write('\n')
 
 
