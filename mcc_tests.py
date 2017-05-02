@@ -43,9 +43,9 @@ def get_data():
 	write_data('alg2_V2_1-50.csv', minimum(changegreedy, V2, 1, 50))
 	write_data('alg2_V3_1-50.csv', minimum(changegreedy, V3, 1, 50))
 	
-	write_data('alg2_V1_2000-2200.csv', minimum(changedp, V1, 2000, 2200))
-	write_data('alg2_V2_2000-2200.csv', minimum(changedp, V2, 2000, 2200))
-	write_data('alg2_V3_2000-2200.csv', minimum(changedp, V3, 2000, 2200))
+	write_data('alg2_V1_2000-2200.csv', minimum(changegreedy, V1, 2000, 2200))
+	write_data('alg2_V2_2000-2200.csv', minimum(changegreedy, V2, 2000, 2200))
+	write_data('alg2_V3_2000-2200.csv', minimum(changegreedy, V3, 2000, 2200))
 	
 	write_data('alg3_V1_1-50.csv', minimum(changedp, V1, 1, 50))
 	write_data('alg3_V2_1-50.csv', minimum(changedp, V2, 1, 50))
