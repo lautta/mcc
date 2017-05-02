@@ -17,9 +17,9 @@ Each algorithm can be individually processed by using the name instead of all
 - For example, to run changeslow on Amount.txt, run the command: python mcc.py changeslow Amount.txt
 - This will create a new file if one does not exist or append the results to the existing file<br><br>
 
-If no filename argument is provided, mcc.py will run all three algorithms on test.txt<br><br>
+If no filename argument is provided, mcc.py will run all three algorithms on test.txt<br>
 
-Results will be output to filenamechanges.txt<br>
+Results for every command will be output to filenamechanges.txt<br>
 
 Note: If a filename argument is given, then either all, changeslow, changegreedy or changedp is required<br><br>
 
