@@ -13,7 +13,7 @@ For correctness testing with file input/output:<br>
 - For example, to run all algorithms on Amount.txt, run the command: python mcc.py all Amount.txt
 - This will create a new file everytime<br><br>
 
-- Each algorithm can be indivually processed by using the name instead of all
+- Each algorithm can be individually processed by using the name instead of all
 - For example, to run changeslow on Amount.txt, run the command: python mcc.py changeslow Amount.txt
 - This will create a new file if one does not exist or append the results to the existing file<br><br>
 
@@ -21,7 +21,7 @@ For correctness testing with file input/output:<br>
 
 - Results will be output to filenamechanges.txt<br>
 
-- Note: If an filename argument is given, then either all, changeslow, changegreedy or changedp is required<br><br>
+- Note: If a filename argument is given, then either all, changeslow, changegreedy or changedp is required<br><br>
 
 Please note that changeslow will have difficulty running coin.txt because of the last problem set<br>
 
