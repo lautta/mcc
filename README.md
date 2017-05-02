@@ -1,14 +1,14 @@
 # mcc
-Project 2 - Minimum Coin Change
+## Project 2 - Minimum Coin Change
 
-Make sure these files are in the same directory:
+#### Make sure these files are in the same directory:
 - mcc.py
 - mcc_algos.py
 - mcc_tests.py
 - test.txt for default testing, if desired
 - whatever .txt file you wish the test
 
-For correctness testing with file input/output:
+#### For correctness testing with file input/output:
 
 Usage: python mcc.py { all || changeslow || changegreedy || changedp } { filename.txt }
 - For example, to run all algorithms on Amount.txt:
@@ -26,5 +26,5 @@ Results for every command will be output to filenamechanges.txt. Please note tha
 
 Note: If a filename argument is given, then either all, changeslow, changegreedy or changedp is required. 
 
-For runtime and other extensive testing:
+#### For runtime and other extensive testing:
 - Usage: python mcc_testing.py
