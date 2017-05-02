@@ -35,7 +35,7 @@ def write_results(filename, algo_func, algo_name, values, amounts, write_option)
 if __name__ == '__main__':
 
 	if len(sys.argv) > 3 or len(sys.argv) == 2:
-		print('Usage: python mcc.py { changeslow || changegreedy || changedp } { filename.txt }')
+		print('Usage: python mcc.py { all || changeslow || changegreedy || changedp } { filename.txt }')
 		exit(1)
 	elif len(sys.argv) == 3:
 		input_file = str(sys.argv[2])
@@ -54,7 +54,7 @@ if __name__ == '__main__':
 			write_results(output_file, changegreedy, 'changegreedy', v, a, 'ab')
 			write_results(output_file, changedp, 'changedp', v, a, 'ab')
 		else:
-			print('%s not recognized.\nUsage: python mcc.py { changeslow || changegreedy || changedp } { filename.txt }' % algorithm)
+			print('%s not recognized.\nUsage: python mcc.py { all || changeslow || changegreedy || changedp } { filename.txt }' % algorithm)
 	else:
 		input_file = 'test.txt'
 		output_file = input_file.split('.')[0] + 'change.txt'
