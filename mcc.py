@@ -1,6 +1,7 @@
 # MCC correctness tests with file read/write
 
 from mcc_algos import *
+import sys
 
 
 def read_problems(filename):
@@ -31,8 +32,16 @@ def write_results(filename, algo_func, algo_name, values, amounts, write_option)
 
 
 if __name__ == '__main__':
-	input_file = 'coins.txt'
-	output_file = 'coinschange.txt'
+
+	if len(sys.argv) > 2:
+		print('Usage: python mcc { filename.txt }')
+		exit(1)
+	elif len(sys.argv) == 2:
+		input_file = str(sys.argv[1])
+	else:
+		input_file = 'test.txt'
+
+	output_file = input_file.split('.')[0] + 'change.txt'
 
 	v, a = read_problems(input_file)
 	write_results(output_file, changeslow, 'changeslow', v, a, 'wb')
